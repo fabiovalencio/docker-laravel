@@ -1,5 +1,8 @@
-<p align="center"><a target="_blank" rel="noopener noreferrer" href="https://docker.com"><img src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/horizontal-logo-monochromatic-white.png" data-canonical-src="https://www.docker.com/sites/default/files/d8/styles/role_icon/public/2019-07/horizontal-logo-monochromatic-white.png" style="max-width:50%;"></a></p>
-<p align="center"><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/5ceadc94fd40688144b193fd8ece2b805d79ca9b/68747470733a2f2f6c61726176656c2e636f6d2f6173736574732f696d672f636f6d706f6e656e74732f6c6f676f2d6c61726176656c2e737667"><img src="https://camo.githubusercontent.com/5ceadc94fd40688144b193fd8ece2b805d79ca9b/68747470733a2f2f6c61726176656c2e636f6d2f6173736574732f696d672f636f6d706f6e656e74732f6c6f676f2d6c61726176656c2e737667" data-canonical-src="https://laravel.com/assets/img/components/logo-laravel.svg" style="max-width:100%;"></a></p>
+<h1 align="center">
+    <br>
+    <a href="https://www.docker.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/0e507e36536396ee57530a9b5e9bb651a368ea3c/68747470733a2f2f6b6f6e70612e6769746875622e696f2f64657669636f6e2f64657669636f6e2e6769742f69636f6e732f646f636b65722f646f636b65722d6f726967696e616c2d776f72646d61726b2e737667" alt="Docker" width="100" data-canonical-src="https://konpa.github.io/devicon/devicon.git/icons/docker/docker-original-wordmark.svg" style="max-width:100%;"></a>
+    <a href="https://laravel.com/" rel="nofollow"><img src="https://camo.githubusercontent.com/fd7b6ef68bb8add9c3ace6bd735e01d16f5f5af3/68747470733a2f2f6b6f6e70612e6769746875622e696f2f64657669636f6e2f64657669636f6e2e6769742f69636f6e732f6c61726176656c2f6c61726176656c2d706c61696e2d776f72646d61726b2e737667" alt="Laravel" width="100" data-canonical-src="https://konpa.github.io/devicon/devicon.git/icons/laravel/laravel-plain-wordmark.svg" style="max-width:100%;"></a>
+</h1>
 
 ## Laravel applications with Docker
 
@@ -27,9 +30,9 @@ This setup contains;
 
 Make sure your have [Composer](https://getcomposer.org) and [Docker](https://docker.com) installed
 
-Clone the image in Docker Hub
+Clone repo
 <pre>
-    <code>docker push fabiovalencio/laravel-optmized:latest</code>
+    <code>$ git clone https://github.com/fabiovalencio/docker-laravel docker-laravel && cd docker-laravel</code>
 </pre>
 
 Build and run the Docker containers
@@ -37,7 +40,17 @@ Build and run the Docker containers
     <code>docker-compose up -d</code>
 </pre>
 
+## CLI
 
+Clone the image in Docker Hub
+<pre>
+    <code>docker pull fabiovalencio/laravel-optmized:latest</code>
+</pre>
+
+Build and run the Docker containers
+<pre>
+    <code>docker run -p 8000:80 fabiovalencio/laravel-optmized</code>
+</pre>
 
 ## License
 
