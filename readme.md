@@ -40,17 +40,9 @@ Build and run the Docker containers
     <code>docker-compose up -d</code>
 </pre>
 
-## CLI
 
-Clone the image in Docker Hub
-<pre>
-    <code>docker pull fabiovalencio/laravel-optmized:latest</code>
-</pre>
 
-Build and run the Docker containers
-<pre>
-    <code>docker run -p 8000:80 fabiovalencio/laravel-optmized</code>
-</pre>
+<b>Wait for Composer installation it can take a while</b>
 
 ## License
 
