@@ -14,7 +14,6 @@ RUN rm -rf /var/www/html
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 RUN ln -s public html
-COPY .env .env.example
 
 EXPOSE 9000
 ENTRYPOINT ["php-fpm"]
