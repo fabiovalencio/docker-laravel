@@ -49,9 +49,9 @@ services:
     volumes:
       - ./.docker/dbdata:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=laravel
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_USER=root
+      - MYSQL_DATABASE=homestead
+      - MYSQL_ROOT_PASSWORD=homestead
+      - MYSQL_USER=secret
     networks:
       - app-network
 
