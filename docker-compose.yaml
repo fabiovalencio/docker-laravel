@@ -8,9 +8,9 @@ services:
     entrypoint: dockerize -template ./.docker/app/.env:.env -wait tcp://db:3306 -timeout 40s ./.docker/entrypoint.sh
     environment:
       - DB_HOST=db
-      - DB_DATABASE=homestead
-      - DB_USERNAME=homestead
-      - DB_PASSWORD=secret
+      - DB_DATABASE=laravel
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
     volumes:
       - .:/var/www
     networks:
@@ -49,9 +49,9 @@ services:
     volumes:
       - ./.docker/dbdata:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=homestead
-      - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_USER=homestead
+      - MYSQL_DATABASE=laravel
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=root
     networks:
       - app-network
 
