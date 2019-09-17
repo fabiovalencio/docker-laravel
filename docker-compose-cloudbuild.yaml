@@ -50,8 +50,8 @@ services:
       - ./.docker/dbdata:/var/lib/mysql
     environment:
       - MYSQL_DATABASE=homestead
-      - MYSQL_ROOT_PASSWORD=homestead
-      - MYSQL_USER=secret
+      - MYSQL_USER=homestead
+      - MYSQL_ROOT_PASSWORD=secret
     networks:
       - app-network
 
