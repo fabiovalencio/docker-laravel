@@ -8,13 +8,13 @@ steps:
     name: 'gcr.io/cloud-builders/docker'
     args: ['ps']
 
-  - id: "Rodando logs"
-    name: 'gcr.io/cloud-builders/docker'
-    args: ['logs', 'db']
-
-  - id: "Conexao mysql"
-    name: 'gcr.io/cloud-builders/docker'
-    args: ['exec', '-t', 'db', 'mysql', '-uroot', '-p', '-h', '127.0.0.1']
+#  - id: "Rodando logs"
+#    name: 'gcr.io/cloud-builders/docker'
+#    args: ['logs', 'db']
+#
+#  - id: "Conexao mysql"
+#    name: 'gcr.io/cloud-builders/docker'
+#    args: ['exec', '-t', 'db', 'mysql', '-uroot', '-p', '-h', '127.0.0.1']
 
   - id: "Rodando composer"
     name: 'gcr.io/cloud-builders/docker'
