@@ -8,11 +8,19 @@ steps:
     name: 'gcr.io/cloud-builders/docker'
     args: ['ps']
 
+  - id: "Rodando logs"
+    name: 'gcr.io/cloud-builders/docker'
+    args: ['logs', 'db']
+
+  - id: "Conexao mysql"
+    name: 'gcr.io/cloud-builders/docker'
+    args: ['exec', '-it', 'db', 'mysql', '-uroot', '-proot']
+
   - id: "Rodando composer"
     name: 'gcr.io/cloud-builders/docker'
     args: ['exec', '-t', 'app', 'composer', 'install', '--no-plugins', '--no-scripts']
 
-  - id: "Rodando .env"
+  - id: "Copiando .env"
     name: 'gcr.io/cloud-builders/docker'
     args: ['exec', '-t', 'app', 'cp', '.env.example', '.env']
 
