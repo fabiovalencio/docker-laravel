@@ -14,7 +14,7 @@ steps:
 
   - id: "Conexao mysql"
     name: 'gcr.io/cloud-builders/docker'
-    args: ['exec', '-t', 'db', 'mysql', '-uroot']
+    args: ['exec', '-t', 'db', 'mysql', '-uroot', '-p', '-h', '127.0.0.1']
 
   - id: "Rodando composer"
     name: 'gcr.io/cloud-builders/docker'
