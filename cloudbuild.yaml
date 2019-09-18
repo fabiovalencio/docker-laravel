@@ -20,10 +20,6 @@ steps:
     name: 'gcr.io/cloud-builders/docker'
     args: ['exec', '-t', 'app', 'php', '/var/www/artisan', 'key:generate']
 
-  - id: "Rodando dokcer inspect"
-    name: 'gcr.io/cloud-builders/docker'
-    args: ['inspect', '-f', '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}', '$(docker ps -aq)']
-
   - id: "Rodando migrations"
     name: 'gcr.io/cloud-builders/docker'
     args: ['exec', '-t', 'app', 'php', '/var/www/artisan', 'migrate']
