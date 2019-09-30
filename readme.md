@@ -45,6 +45,11 @@ Build and run the Docker containers
 <b>Wait for Composer installation it can take a while</b>
 
 <b>The service will run on localhost: 8000</b>
+
+## Images
+![](public/images/CI-GCP.png)
+![](public/images/CI-GIt.png)
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
